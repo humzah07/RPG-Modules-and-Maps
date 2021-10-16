@@ -1,0 +1,16 @@
+# defining the layout of the space ship
+# EnemyTile is where the user must fight attackers
+# SuppliesTile is where food, weapons, and first aid are stored
+# EscapePod is the end of the game
+# BoringTile is where nothing occurs
+# StartTile is where the game begins
+ship_map = [
+     ["Blank", "Blank", "Blank", "Level 10" , "Blank"   ],
+     ["Blank", "Blank", "Blank", "Level 9", "Blank"],
+     ["Blank", "Blank", "Level 7", "Level 8", "Blank"],
+     ["Blank", "Blank", "Level 6", "Blank", "Blank"],
+     ["Blank", "Level 4", "Level 5", "Blank", "Blank"],
+     ["Blank", "Level 3", "Blank", "Blank", "Blank"],
+     ["Blank", "Level 2", "Level 1", "Blank", "Blank"],
+ ]
+print(ship_map)
