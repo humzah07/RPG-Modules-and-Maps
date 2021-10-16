@@ -1,4 +1,4 @@
-# Course: CS 30
+ # Course: CS 30
 # Period: 2
 # Date created: 19/07/21
 # Date last modified: 21/07/21
@@ -18,7 +18,7 @@ inventory_input = input("Batman or Green Lantern: ")
 # This inventory is paired with specific characters
 inventory = {"Batman": {"Night Vision Goggles":
                         {"description": "Use the Night Vision Goggles to see in the dark and find your way",
-                         "damage": 10, "protection": 0},
+                         "damage": 0, "protection": 0},
                          },
              "Green Lantern": {"Power Ring":
                            {"description":
@@ -50,8 +50,8 @@ def player_inventory(player, inventory):
 while True:
     intro.introduction()
     if inventory_input == "Batman":
-        player_inventory("Batman", inventory)
         Character.character_intro()
+        player_inventory("Batman", inventory)
         action.action_1()
         action.action_2()
         action.action_3()
@@ -65,8 +65,8 @@ while True:
         quit()
     if inventory_input == "Green Lantern":
         intro.introduction()
-        player_inventory("Green Lantern", inventory)
         Character.character_intro_2()
+        player_inventory("Green Lantern", inventory)
         action.actions_1()
         action.actions_2()
         action.actions_3()
