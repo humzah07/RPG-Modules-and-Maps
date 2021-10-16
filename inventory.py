@@ -1,24 +1,15 @@
-# Course: CS 30
-# Period: 2
-# Date created: 19/07/21
-# Date last modified: 21/07/21
-# Name: Humzah Zahid Malik
-# Description: Batman x Green Lantern - Temple Escape
-
-
 import action
 import Character
 import os
 import sys
 import intro
 
-
 inventory_input = input("Batman or Green Lantern: ")
 
 # This inventory is paired with specific characters
 inventory = {"Batman": {"Night Vision Goggles":
                         {"description": "Use the Night Vision Goggles to see in the dark and find your way",
-                         "damage": 10, "protection": 0},
+                         "damage": 0, "protection": 0},
                          },
              "Green Lantern": {"Power Ring":
                            {"description":
@@ -48,8 +39,8 @@ def player_inventory(player, inventory):
     return protection_items, weapons
 
 while True:
-    intro.introduction()
     if inventory_input == "Batman":
+        intro.introduction()
         player_inventory("Batman", inventory)
         Character.character_intro()
         action.action_1()
@@ -80,5 +71,3 @@ while True:
     else:
         print("invalid action")
         os.execl(sys.executable, sys.executable, *sys.argv)
-
-
