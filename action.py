@@ -1,6 +1,6 @@
 # valid directions and actions to move
 
-valid_actions = ["forward", "backward", "left", "right"]
+valid_actions = ["forward", "backward", "left", "right", "quit"]
 
 
 # valid action or hint for Batman
@@ -13,42 +13,38 @@ valid_actions_2 = ["goggles"]
 
 valid_hint = ["ring"]
 
-# This function defines the intro for Batman
 
 def menu():
+    """ Prints out the menu for all the possible valid actions """
     print("""Choose an action:
     """)
     for action in valid_actions:
         print(f"* {action}")
 
-# This defines the menu for the hint for Batman
-
 
 def menu_2():
+    """This defines the menu for the hint for Batman"""
     for action in valid_actions_2:
         print(f"* {action}")
 
-# This defines the menu for the hint for Green Lantern
-
 
 def menu_3():
+    """This defines the menu for the hint for Green Lantern"""
     for action in valid_hint:
         print(f"* {action}")
 
 
-# This function prints out the ending message of the game
-
-
 def end_script():
+    """This function prints out the ending message of the game"""
     print("""
     You have successfully escaped out of the temple and
     you have completed the game.
     """)
 
-# This defines the first action of the game for Batman
-
 
 def action_1():
+    """ Prints out the menu for input action to move in the map
+    at Level 1 for Batman """
     print("""
       LEVEL 1
       """)
@@ -67,6 +63,9 @@ def action_1():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_1()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This gives you a hint for your next direction.
@@ -79,10 +78,9 @@ def action_1():
         action_1()
 
 
-# This defines the second action for Batman
-
-
 def action_2():
+    """ Prints out the menu for input action to move in the map
+    at Level 2 for Batman"""
     print("""
         LEVEL 2
         """)
@@ -101,6 +99,9 @@ def action_2():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_2()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This gives you a hint for you next direction.
@@ -113,10 +114,9 @@ def action_2():
         action_2()
 
 
-# This defines the third action for Batman
-
-
 def action_3():
+    """ Prints out the menu for input action to move in the map
+    at Level 3 for Batman"""
     print("""
         LEVEL 3
         """)
@@ -135,6 +135,9 @@ def action_3():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_3()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This gives you a hint for you next direction.
@@ -147,10 +150,9 @@ def action_3():
         action_3()
 
 
-# This defines the fourth action for Batman
-
-
 def action_4():
+    """ Prints out the menu for input action to move in the map
+    at Level 4 for Batman"""
     print("""
         LEVEL 4
         """)
@@ -169,6 +171,9 @@ def action_4():
     if action_input.lower() in valid_actions[3]:
         print(f" Turn right to walk towards the exit ")
         action_5()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This gives you a hint for you next direction.
@@ -181,10 +186,9 @@ def action_4():
         action_4()
 
 
-# This defines the fifth action for Batman
-
-
 def action_5():
+    """ Prints out the menu for input action to move in the map
+    at Level 5 for Batman"""
     print("""
         LEVEL 5
         """)
@@ -203,6 +207,9 @@ def action_5():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_5()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This gives you a hint for you next direction.
@@ -215,10 +222,9 @@ def action_5():
         action_5()
 
 
-# This defines the sixth action for Batman
-
-
 def action_6():
+    """ Prints out the menu for input action to move in the map
+    at Level 6 for Batman"""
     print("""
         LEVEL 6
         """)
@@ -237,6 +243,9 @@ def action_6():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_6()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This gives you a hint for you next direction.
@@ -249,10 +258,9 @@ def action_6():
         action_6()
 
 
-# This defines the seventh action for Batman
-
-
 def action_7():
+    """ Prints out the menu for input action to move in the map
+    at Level 7 for Batman"""
     print("""
         LEVEL 7
         """)
@@ -271,6 +279,9 @@ def action_7():
     if action_input.lower() in valid_actions[3]:
         print(f" turn right towards the exit ")
         action_8()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This gives you a hint for you next direction.
@@ -283,10 +294,9 @@ def action_7():
         action_7()
 
 
-# This defines the eighth action for Batman
-
-
 def action_8():
+    """ Prints out the menu for input action to move in the map
+    at Level 8 for Batman"""
     print("""
         LEVEL 8
         """)
@@ -304,6 +314,9 @@ def action_8():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_8()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This gives you a hint for you next direction.
@@ -316,10 +329,9 @@ def action_8():
         action_8()
 
 
-# This defines the ninth action for Batman
-
-
 def action_9():
+    """ Prints out the menu for input action to move in the map
+    at Level 9 for Batman"""
     print("""
         LEVEL 9
         """)
@@ -337,6 +349,9 @@ def action_9():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_9()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This gives you a hint for you next direction.
@@ -351,7 +366,10 @@ def action_9():
         print("Invalid direction!")
         action_9()
 
+
 def action_10():
+    """ Prints out the menu for input action to move in the map
+    at Level 10 for Batman"""
     print("""
         LEVEL 10
         """)
@@ -370,6 +388,9 @@ def action_10():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         action_10()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_actions_2[0]:
         print(f""" You have chosen to use the Night Vision Goggles.
             This gives you a hint for you next direction.
@@ -382,10 +403,9 @@ def action_10():
         action_10()
 
 
-# This defines the first action taken by the user for Green Lantern
-
-
 def actions_1():
+    """ Prints out the menu for input action to move in the map
+    at Level 1 for Green Lantern """
     print("""
       LEVEL 1
       """)
@@ -404,6 +424,9 @@ def actions_1():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_1()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Power Ring.
       This ring is used as a flashlight
@@ -417,10 +440,9 @@ def actions_1():
         actions_1()
 
 
-# This defines the second action taken by the user for Green Lantern
-
-
 def actions_2():
+    """ Prints out the menu for input action to move in the map
+    at Level 2 for Green Lantern """
     print("""
         LEVEL 2
         """)
@@ -439,6 +461,9 @@ def actions_2():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_2()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Power Ring.
       This ring is used as a flashlight
@@ -451,11 +476,11 @@ def actions_2():
         print("Invalid direction!")
         actions_2()
 
-# This defines the third action taken by the user for Green Lantern
-
 
 def actions_3():
-    print("""
+    """ Prints out the menu for input action to move in the map
+    at Level 3 for Green Lantern """
+    print(""""
         LEVEL 3
         """)
     menu()
@@ -473,6 +498,9 @@ def actions_3():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_3()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Power Ring.
       This ring is used a flashlight
@@ -486,10 +514,9 @@ def actions_3():
         actions_3()
 
 
-# This defines the fourth action taken by the user for Green Lantern
-
-
 def actions_4():
+    """ Prints out the menu for input action to move in the map
+    at Level 4 for Green Lantern """
     print("""
         LEVEL 4
         """)
@@ -508,6 +535,9 @@ def actions_4():
     if action_input.lower() in valid_actions[3]:
         print(f" Turn right to walk towards the exit ")
         actions_5()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight
@@ -521,10 +551,9 @@ def actions_4():
         actions_4()
 
 
-# This defines the fifth action taken by the user for Green Lantern
-
-
 def actions_5():
+    """ Prints out the menu for input action to move in the map
+    at Level 5 for Green Lantern """
     print("""
         LEVEL 5
         """)
@@ -543,6 +572,9 @@ def actions_5():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_5()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight
@@ -556,10 +588,9 @@ def actions_5():
         actions_5()
 
 
-# This defines the sixth action taken by the user for Green Lantern
-
-
 def actions_6():
+    """ Prints out the menu for input action to move in the map
+    at Level 6 for Green Lantern """
     print("""
         LEVEL 6
         """)
@@ -578,6 +609,9 @@ def actions_6():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_6()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight
@@ -591,10 +625,9 @@ def actions_6():
         actions_6()
 
 
-# This defines the seventh action taken by the user for Green Lantern
-
-
 def actions_7():
+    """ Prints out the menu for input action to move in the map
+    at Level 7 for Green Lantern """
     print("""
         LEVEL 7
         """)
@@ -613,6 +646,9 @@ def actions_7():
     if action_input.lower() in valid_actions[3]:
         print(f" turn right towards the exit ")
         actions_8()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight
@@ -626,10 +662,9 @@ def actions_7():
         actions_7()
 
 
-# This defines the eighth action taken by the user for Green Lantern
-
-
 def actions_8():
+    """ Prints out the menu for input action to move in the map
+    at Level 8 for Green Lantern """
     print("""
         LEVEL 8
         """)
@@ -648,11 +683,15 @@ def actions_8():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_8()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight
       and gives you a hint for you next direction.
-            The direction is forward. Enter forward when the menu restarts. """)
+      The direction is forward.
+      Enter forward when the menu restarts. """)
     if action_input.lower not in valid_hint:
         print("Invalid direction!")
         actions_8()
@@ -661,10 +700,9 @@ def actions_8():
         actions_8()
 
 
-# This defines the ninth action taken by the user for Green Lantern
-
-
 def actions_9():
+    """ Prints out the menu for input action to move in the map
+    at Level 9 for Green Lantern """
     print("""
         LEVEL 9
         """)
@@ -683,6 +721,9 @@ def actions_9():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_9()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight
@@ -695,7 +736,10 @@ def actions_9():
         print("Invalid direction!")
         actions_9()
 
+
 def actions_10():
+    """ Prints out the menu for input action to move in the map
+    at Level 10 for Green Lantern """
     print("""
         LEVEL 10
         """)
@@ -715,6 +759,9 @@ def actions_10():
     if action_input.lower() in valid_actions[3]:
         print(f" Wall ahead ")
         actions_10()
+    if action_input.lower() in valid_actions[4]:
+        print(" You have quit the game ")
+        quit()
     if action_input.lower() in valid_hint[0]:
         print("""You have chosen to use the Night Vision Goggles.
       This ring is used a flashlight
