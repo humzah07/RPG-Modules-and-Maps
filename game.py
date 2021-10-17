@@ -62,7 +62,7 @@ while True:
     if inventory_input == "Green Lantern":
         intro.introduction()
         Character.character_intro_2()
-        main_inventory.player_inventory("Green Lantern", inventory)
+        player_inventory("Green Lantern", inventory)
         action.actions_1()
         action.actions_2()
         action.actions_3()
