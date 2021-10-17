@@ -40,10 +40,10 @@ def player_inventory(player, inventory):
     return protection_items, weapons
 
 while True:
+    intro.introduction()
     if inventory_input == "Batman":
-        intro.introduction()
-        player_inventory("Batman", inventory)
         Character.character_intro()
+        main_inventory.player_inventory("Batman", inventory)
         action.action_1()
         action.action_2()
         action.action_3()
@@ -57,8 +57,8 @@ while True:
         quit()
     if inventory_input == "Green Lantern":
         intro.introduction()
-        player_inventory("Green Lantern", inventory)
         Character.character_intro_2()
+        player_inventory("Green Lantern", inventory)
         action.actions_1()
         action.actions_2()
         action.actions_3()
@@ -72,4 +72,3 @@ while True:
     else:
         print("invalid action")
         os.execl(sys.executable, sys.executable, *sys.argv)
-

@@ -24,6 +24,18 @@ inventory = {"Batman": {"Night Vision Goggles":
                             "Use this ring as a flashlight to find your way",}}
              }
 
+# This defines the layout of the temple
+# Level 1 is where the user starts in the game
+# Level 10 is where the game finishes
+temple_map = [
+     ["Blank", "Blank", "Blank", "Level 10" , "Blank"   ],
+     ["Blank", "Blank", "Blank", "Level 9", "Blank"],
+     ["Blank", "Blank", "Level 7", "Level 8", "Blank"],
+     ["Blank", "Blank", "Level 6", "Blank", "Blank"],
+     ["Blank", "Level 4", "Level 5", "Blank", "Blank"],
+     ["Blank", "Level 3", "Blank", "Blank", "Blank"],
+     ["Blank", "Level 2", "Level 1", "Blank", "Blank"],
+ ]
 
 def player_inventory(player, inventory):
     """Print out the inventory for the choosen character"""
@@ -50,7 +62,7 @@ while True:
     if inventory_input == "Green Lantern":
         intro.introduction()
         Character.character_intro_2()
-        player_inventory("Green Lantern", inventory)
+        main_inventory.player_inventory("Green Lantern", inventory)
         action.actions_1()
         action.actions_2()
         action.actions_3()
