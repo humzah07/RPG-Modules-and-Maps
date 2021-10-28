@@ -1,8 +1,17 @@
 class Character(object):
-    def __init__(self, name, birthplace, identity):
+    def __init__(self, name, birthplace, special_power):
         self.name = name
-        self.birthplace - birthplace
-        self.identity = identity
+        self.special_power = special_power
+        self.birthplace = birthplace
+
+    def introduction(self):
+      print(' Hi, my name is ', self.name) 
+
+    def power(self):
+      print("My special power is my", self.special_power)
+
+    def birthplace(self):
+      print("My birthplace is", self.birthplace)
 
 def character_intro():
     """ Prints out the introduction for Batman """
@@ -11,6 +20,10 @@ def character_intro():
   You will use Batman to get out of this maze.
   You can use a hint to complete a level.
   """)
+    batman = Character("Batman", "High Intelligence", "Gotham City")
+    batman.introduction()
+    batman.power()
+    batman.birthplace()
 
 # This function defines the intro for Green Lantern
 
