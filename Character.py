@@ -1,3 +1,9 @@
+class Character(object):
+    def __init__(self, name, birthplace, identity):
+        self.name = name
+        self.birthplace - birthplace
+        self.identity = identity
+
 def character_intro():
     """ Prints out the introduction for Batman """
     print("""
