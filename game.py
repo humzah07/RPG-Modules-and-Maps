@@ -47,6 +47,8 @@ while True:
     intro.introduction()
     if inventory_input == "Batman":
         Character.character_intro()
+        Character.batman_class()
+        Character.Batman_inventory()
         player_inventory("Batman", inventory)
         action.action_1()
         action.action_2()
@@ -62,6 +64,8 @@ while True:
     if inventory_input == "Green Lantern":
         intro.introduction()
         Character.character_intro_2()
+        Character.green_lantern_class()
+        Character.Green_lantern_inventory()
         player_inventory("Green Lantern", inventory)
         action.actions_1()
         action.actions_2()
