@@ -12,60 +12,33 @@ import os
 import sys
 import intro
 import class_functions
-
-
-inventory_input = input("Batman or Green Lantern: ")
+import main_inventory
+import maps
 
 # This inventory is paired with specific characters
 inventory = {"Batman": {"Night Vision Goggles":
-                        {"description": """Use the Night Vision Goggles to see
-                        in the dark and find your way""" ,}},
+                        {"description": """ Use the Night Vision Goggles to see
+                        in the dark and find your way """, }},
              "Green Lantern": {"Power Ring":
-                           {"description":
-                            "Use this ring as a flashlight to find your way",}}
-             }
+                               {"description":
+                                "Use it as a flashlight to find their way", }}}
 
-
-def player_inventory(player, inventory):
-    """Print out the inventory for the choosen character"""
-    for item in inventory[player]:
-        description = inventory[player][item]["description"]
-        print(f"{player}'s {item} - {description}")
-
-while True:
-    if inventory_input == "Batman":
-        Characters.character_intro()
-        Characters.batman_class()
-        Characters.Batman_inventory()
-        class_functions.firstTiles()
-        player_inventory("Batman", inventory)
-        actions.action_1()
-        actions.action_2()
-        actions.action_3()
-        actions.action_4()
-        actions.action_5()
-        actions.action_6()
-        actions.action_7()
-        actions.action_8()
-        actions.action_9()
-        actions.action_9()
-        quit()
-    if inventory_input == "Green Lantern":
-        intro.introduction()
-        Characters.character_intro_2()
-        Characters.green_lantern_class()
-        Characters.Green_lantern_inventory()
-        player_inventory("Green Lantern", inventory)
-        actions.actions_1()
-        actions.actions_2()
-        actions.actions_3()
-        actions.actions_4()
-        actions.actions_5()
-        actions.actions_6()
-        actions.actions_7()
-        actions.actions_8()
-        actions.actions_10()
-        quit()
-    else:
-        print("invalid action")
-        os.execl(sys.executable, sys.executable, *sys.argv)
+character_choice = input("Enter Batman or Green Lantern: ")
+if character_choice == "Batman":
+    intro.introduction_part_1()
+    intro.introduction_part_2()
+    maps.main_map()
+    Characters.character_intro()
+    Characters.batman_class()
+    Characters.Batman_inventory()
+    class_functions.firstTiles()
+    main_inventory.player_inventory("Batman", inventory)
+if character_choice == "Green Lantern":
+    intro.introduction_part_1()
+    intro.introduction_part_2()
+    maps.main_map()
+    Characters.character_intro_2()
+    Characters.green_lantern_class()
+    Characters.Green_lantern_inventory()
+    main_inventory.player_inventory("Green Lantern", inventory)
+    class_functions.firstTiles()

@@ -39,16 +39,22 @@ def Green_lantern_inventory():
 def character_intro():
     """ Prints out the introduction for Batman """
     print("""
+  ####################################################
+
   You have chosen Batman as your character.
   You will use Batman to get out of this maze.
   You can use a hint to complete a level.
+  Now Batman will introduce himself.
   """)
 
 
 def character_intro_2():
     """ Prints out the introduction for Green Lantern """
     print("""
+    #####################################################
+
      You have chosen Green Lantern as your character.
      You will use Green Lantern to get out of this maze.
      You can use a hint to complete a level.
+     Now Green Lantern will introduce himself.
     """)
