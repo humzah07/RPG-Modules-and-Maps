@@ -1,4 +1,4 @@
-def introduction():
+def introduction_part_1():
     """ Prints out the introduction
     of the game """
     print("""
@@ -22,8 +22,13 @@ def introduction():
   provided in the menu, to find your way out of the temple
 
   """)
+
+def introduction_part_2():
+    print(""" 
+    THIS IS PART ONE OF THE GAME
+
     
-
-
+    """)
+    
 
 

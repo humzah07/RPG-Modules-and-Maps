@@ -1,3 +1,7 @@
+import actions
+import intro
+import Characters
+
 class Character(object):
     def __init__(self, name, special_power, birthplace):
         self.name = name
@@ -14,11 +18,13 @@ class Character(object):
       print("My birthplace is", self.birthplace)
       print('\n')
 
+
 def green_lantern_class():
     class Green_Lantern(Character):
         green_lantern = Character("Green Lantern", "power ring", "Coast City")
         green_lantern.introduction()
         green_lantern.power_birthplace()
+
 
 def batman_class():
     class Batman(Character):
@@ -48,6 +54,9 @@ def menu():
 
 def firstTiles():
     """Prints out the menu and the current location for movement in the map """
+    Characters.character_intro()
+    Characters.batman_class()
+    Characters.Batman_inventory()
     class firstTile(MapTile):
         print("""
         You are at the start. enter direction to go
@@ -225,6 +234,7 @@ def eighthTiles():
         print(""" Congratulations!!!. You have found the treasure.
                   You will now move to the next round, where you have
                   to escape the enemies with the treasure. """)
+        actions.action_1()
 
 
 def ninthTiles():

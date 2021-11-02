@@ -1,9 +1,3 @@
-import action
-import Character
-import os
-import sys
-import intro
-
 inventory_input = input("Batman or Green Lantern: ")
 
 # This inventory is paired with specific characters
@@ -39,36 +33,3 @@ def player_inventory(player, inventory):
             weapons.append(item)
     return protection_items, weapons
 
-while True:
-    intro.introduction()
-    if inventory_input == "Batman":
-        Character.character_intro()
-        player_inventory("Batman", inventory)
-        action.action_1()
-        action.action_2()
-        action.action_3()
-        action.action_4()
-        action.action_5()
-        action.action_6()
-        action.action_7()
-        action.action_8()
-        action.action_9()
-        action.action_9()
-        quit()
-    if inventory_input == "Green Lantern":
-        intro.introduction()
-        Character.character_intro_2()
-        player_inventory("Green Lantern", inventory)
-        action.actions_1()
-        action.actions_2()
-        action.actions_3()
-        action.actions_4()
-        action.actions_5()
-        action.actions_6()
-        action.actions_7()
-        action.actions_8()
-        action.actions_10()
-        quit()
-    else:
-        print("invalid action")
-        os.execl(sys.executable, sys.executable, *sys.argv)

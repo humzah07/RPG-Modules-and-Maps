@@ -1,0 +1,17 @@
+[[package]]
+name = "action"
+version = "1.4.4"
+description = "A command-line parser you won't hate"
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "863235c28933dfdfe95734dc1ea4d8742611a4f3cc38bc8f3138091c394428f1"
+
+[metadata.files]
+action = [
+    {file = "action-1.4.4-py3-none-any.whl", hash = "sha256:c05e5c98eed350faa4d298decd347a94bf6dab1b35b9ca18432fadfd466e09a2"},
+]

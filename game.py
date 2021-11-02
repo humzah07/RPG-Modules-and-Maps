@@ -6,27 +6,12 @@
 # Description: Batman x Green Lantern - Temple Escape
 
 
-import action
-import Character
+import actions
+import Characters
 import os
 import sys
 import intro
 import class_functions
-
-print(temple_map)
-
-# This defines the layout of the temple
-# Level 1 is where the user starts in the game
-# Level 10 is where the game finishes
-temple_map = [
-     ["Blank", "Blank", "Blank", "Level 10" , "Blank"   ],
-     ["Blank", "Blank", "Blank", "Level 9", "Blank"],
-     ["Blank", "Blank", "Level 7", "Level 8", "Blank"],
-     ["Blank", "Blank", "Level 6", "Blank", "Blank"],
-     ["Blank", "Level 4", "Level 5", "Blank", "Blank"],
-     ["Blank", "Level 3", "Blank", "Blank", "Blank"],
-     ["Blank", "Level 2", "Level 1", "Blank", "Blank"],
- ]
 
 
 inventory_input = input("Batman or Green Lantern: ")
@@ -40,18 +25,6 @@ inventory = {"Batman": {"Night Vision Goggles":
                             "Use this ring as a flashlight to find your way",}}
              }
 
-# This defines the layout of the temple
-# Level 1 is where the user starts in the game
-# Level 10 is where the game finishes
-temple_map = [
-     ["Blank", "Blank", "Blank", "Level 10" , "Blank"   ],
-     ["Blank", "Blank", "Blank", "Level 9", "Blank"],
-     ["Blank", "Blank", "Level 7", "Level 8", "Blank"],
-     ["Blank", "Blank", "Level 6", "Blank", "Blank"],
-     ["Blank", "Level 4", "Level 5", "Blank", "Blank"],
-     ["Blank", "Level 3", "Blank", "Blank", "Blank"],
-     ["Blank", "Level 2", "Level 1", "Blank", "Blank"],
- ]
 
 def player_inventory(player, inventory):
     """Print out the inventory for the choosen character"""
@@ -60,39 +33,38 @@ def player_inventory(player, inventory):
         print(f"{player}'s {item} - {description}")
 
 while True:
-    intro.introduction()
     if inventory_input == "Batman":
-        Character.character_intro()
-        Character.batman_class()
-        Character.Batman_inventory()
+        Characters.character_intro()
+        Characters.batman_class()
+        Characters.Batman_inventory()
         class_functions.firstTiles()
         player_inventory("Batman", inventory)
-        action.action_1()
-        action.action_2()
-        action.action_3()
-        action.action_4()
-        action.action_5()
-        action.action_6()
-        action.action_7()
-        action.action_8()
-        action.action_9()
-        action.action_9()
+        actions.action_1()
+        actions.action_2()
+        actions.action_3()
+        actions.action_4()
+        actions.action_5()
+        actions.action_6()
+        actions.action_7()
+        actions.action_8()
+        actions.action_9()
+        actions.action_9()
         quit()
     if inventory_input == "Green Lantern":
         intro.introduction()
-        Character.character_intro_2()
-        Character.green_lantern_class()
-        Character.Green_lantern_inventory()
+        Characters.character_intro_2()
+        Characters.green_lantern_class()
+        Characters.Green_lantern_inventory()
         player_inventory("Green Lantern", inventory)
-        action.actions_1()
-        action.actions_2()
-        action.actions_3()
-        action.actions_4()
-        action.actions_5()
-        action.actions_6()
-        action.actions_7()
-        action.actions_8()
-        action.actions_10()
+        actions.actions_1()
+        actions.actions_2()
+        actions.actions_3()
+        actions.actions_4()
+        actions.actions_5()
+        actions.actions_6()
+        actions.actions_7()
+        actions.actions_8()
+        actions.actions_10()
         quit()
     else:
         print("invalid action")
