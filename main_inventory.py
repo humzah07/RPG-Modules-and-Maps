@@ -43,7 +43,7 @@ while True:
     intro.introduction()
     if inventory_input == "Batman":
         Character.character_intro()
-        main_inventory.player_inventory("Batman", inventory)
+        player_inventory("Batman", inventory)
         action.action_1()
         action.action_2()
         action.action_3()

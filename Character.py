@@ -3,6 +3,7 @@ class Character(object):
         self.name = name
         self.special_power = special_power
         self.birthplace = birthplace
+        self.location = 'start'
 
     def introduction(self):
       print('Hi, my name is ', self.name)
@@ -10,18 +11,20 @@ class Character(object):
 
     def power_birthplace(self):
       print("My special power is my", self.special_power)
-      print("My birthplace is", self.birthplace + """ 
-       """)
+      print("My birthplace is", self.birthplace)
+      print('\n')
 
 def green_lantern_class():
-    green_lantern = Character("Green Lantern", "power ring", "Coast City")
-    green_lantern.introduction()
-    green_lantern.power_birthplace()
+    class Green_Lantern(Character):
+        green_lantern = Character("Green Lantern", "power ring", "Coast City")
+        green_lantern.introduction()
+        green_lantern.power_birthplace()
 
 def batman_class():
-    batman = Character("Batman", "High Intelligence", "Gotham City")
-    batman.introduction()
-    batman.power_birthplace()
+    class Batman(Character):
+        batman = Character("Batman", "High Intelligence", "Gotham City")
+        batman.introduction()
+        batman.power_birthplace()
 
 def Batman_inventory():
     """ Prints out a statement about Batman's inventory """
@@ -40,7 +43,6 @@ def character_intro():
   You will use Batman to get out of this maze.
   You can use a hint to complete a level.
   """)
-    
 
 
 def character_intro_2():

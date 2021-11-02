@@ -6,6 +6,12 @@ def introduction():
   While they are looking for the base, the enemy is notified of their mission
   Batman and Green Lantern need to find their way out and escape the temple.
 
+  There are two parts of the game. 
+  
+  In the first part, you need to find the treasure, which is hidden in 1 of the 9 tiles. 
+
+  In the second part, after you have found the treausre, you will be automatically moved to the next part, where you will need to find your way out of the temple.
+
   You can go only four directions to escape:
   forward, backward, right, left
 
@@ -16,20 +22,7 @@ def introduction():
   provided in the menu, to find your way out of the temple
 
   """)
-    print(temple_map)
-
-# This defines the layout of the temple
-# Level 1 is where the user starts in the game
-# Level 10 is where the game finishes
-temple_map = [
-     ["Blank", "Blank", "Blank", "Level 10" , "Blank"   ],
-     ["Blank", "Blank", "Blank", "Level 9", "Blank"],
-     ["Blank", "Blank", "Level 7", "Level 8", "Blank"],
-     ["Blank", "Blank", "Level 6", "Blank", "Blank"],
-     ["Blank", "Level 4", "Level 5", "Blank", "Blank"],
-     ["Blank", "Level 3", "Blank", "Blank", "Blank"],
-     ["Blank", "Level 2", "Level 1", "Blank", "Blank"],
- ]
+    
 
 
 

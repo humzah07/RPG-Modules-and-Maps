@@ -11,6 +11,22 @@ import Character
 import os
 import sys
 import intro
+import class_functions
+
+print(temple_map)
+
+# This defines the layout of the temple
+# Level 1 is where the user starts in the game
+# Level 10 is where the game finishes
+temple_map = [
+     ["Blank", "Blank", "Blank", "Level 10" , "Blank"   ],
+     ["Blank", "Blank", "Blank", "Level 9", "Blank"],
+     ["Blank", "Blank", "Level 7", "Level 8", "Blank"],
+     ["Blank", "Blank", "Level 6", "Blank", "Blank"],
+     ["Blank", "Level 4", "Level 5", "Blank", "Blank"],
+     ["Blank", "Level 3", "Blank", "Blank", "Blank"],
+     ["Blank", "Level 2", "Level 1", "Blank", "Blank"],
+ ]
 
 
 inventory_input = input("Batman or Green Lantern: ")
@@ -49,6 +65,7 @@ while True:
         Character.character_intro()
         Character.batman_class()
         Character.Batman_inventory()
+        class_functions.firstTiles()
         player_inventory("Batman", inventory)
         action.action_1()
         action.action_2()
