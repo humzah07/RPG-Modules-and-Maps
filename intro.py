@@ -16,6 +16,8 @@ def introduction_part_1():
   """)
 
 def introduction_part_2():
+    """ Prints out the introduction
+    of the first part of the game """
     print(""" 
     THIS IS PART ONE OF THE GAME
 
@@ -30,6 +32,8 @@ def introduction_part_2():
     
     
 def introduction_part_3():
+    """ Prints out the introduction
+    of the second part of the game """
     print(""" 
     THIS IS PART TWO OF THE GAME 
 

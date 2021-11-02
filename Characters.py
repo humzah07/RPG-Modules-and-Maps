@@ -1,4 +1,5 @@
 class Character(object):
+    """ This object gives attributes to each character """
     def __init__(self, name, special_power, birthplace):
         self.name = name
         self.special_power = special_power
@@ -15,12 +16,14 @@ class Character(object):
       print('\n')
 
 def green_lantern_class():
+    """ This object uses the main class to make a child object"""
     class Green_Lantern(Character):
         green_lantern = Character("Green Lantern", "power ring", "Coast City")
         green_lantern.introduction()
         green_lantern.power_birthplace()
 
 def batman_class():
+    """ This object uses the main class to make a child object"""
     class Batman(Character):
         batman = Character("Batman", "High Intelligence", "Gotham City")
         batman.introduction()

@@ -6,7 +6,6 @@
 # Description: Batman x Green Lantern - Temple Escape
 
 
-import actions
 import Characters
 import os
 import sys

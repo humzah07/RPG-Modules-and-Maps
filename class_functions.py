@@ -1,6 +1,5 @@
 import actions
 import intro
-import Characters
 import main_inventory
 import maps
 
@@ -13,6 +12,7 @@ inventory = {"Batman": {"Night Vision Goggles":
                                 "Use it as a flashlight to find their way", }}}
 
 class Character(object):
+    """ This object gives attributes to each character """
     def __init__(self, name, special_power, birthplace):
         self.name = name
         self.special_power = special_power
@@ -30,6 +30,7 @@ class Character(object):
 
 
 def green_lantern_class():
+    """ Prints out some description for Green Lantern """
     class Green_Lantern(Character):
         green_lantern = Character("Green Lantern", "power ring", "Coast City")
         green_lantern.introduction()
@@ -37,6 +38,7 @@ def green_lantern_class():
 
 
 def batman_class():
+    """ Prints out some description for Batman """
     class Batman(Character):
         batman = Character("Batman", "High Intelligence", "Gotham City")
         batman.introduction()
@@ -56,8 +58,9 @@ valid_actions = ["forward", "backward", "left", "right"]
 
 
 def menu():
-    print("""Choose an action:
-    """)
+    """ Prints out the menu for the actions """
+    print("""Choose an action:  
+     """)
     for action in valid_actions:
         print(f"* {action}")
 

@@ -3,6 +3,7 @@
 # Level 10 is where the game finishes
 
 def map_temple():
+    """ Prints out the map for the second part of the game """
     temple_map = [
       ["Blank", "Blank", "Blank", "Level 10" , "Blank"],
       ["Blank", "Blank", "Blank", "Level 9", "Blank"],
@@ -15,6 +16,7 @@ def map_temple():
     print(temple_map)
 
 def main_map():
+    """ Prints out the map for the first part of the game """
     gamemap_2 = [
             ["seventhTile=(1, 2)", "eighthTile=(2, 2)", "ninthTile=(3, 2)", ],
             ["fourthTile=(1, 1)", "fifthTile=(2, 1)", "sixthTile=(3, 1)", ],
